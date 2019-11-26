@@ -13,7 +13,7 @@
 // 	}
 // }
 function isOddNumber(num) {
-	return num % 2 === 0;
+	return num % 2 === 1;
 }
 
 // ここにconsole.logを使って「9」「14」を引数に渡したときの結果値を出力する
@@ -31,9 +31,9 @@ console.log('入力: 14, 期待する結果:', isOddNumber(14));
 //     3. 【チャレンジ問題】再帰関数を使ったやり方(参考記事: https://qiita.com/chuck0523/items/2c40a5da90a1d73ab956)
 
 // ここにfactorial関数を作る
-const factorial = function (num2) {
-	let result = num2;
-	for (let i = num2 - 1; 0 < i; i--) {
+const factorial = function (num) {
+	let result = num;
+	for (let i = num - 1; 0 < i; i--) {
 		result *= i;
 	}
 	return result;
